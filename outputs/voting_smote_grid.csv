@@ -1,0 +1,19 @@
+config,model,acc,prec,rec,f1,cm,train_size
+NO_IQR_split20,Voting hard SMOTE_default,0.8295,0.5676,0.6806,0.619,"[[1382, 211], [130, 277]]",12740
+NO_IQR_split20,Voting soft SMOTE_default,0.8275,0.5615,0.6953,0.6213,"[[1372, 221], [124, 283]]",12740
+NO_IQR_split20,Voting hard SMOTE_8000,0.813,0.5295,0.7273,0.6128,"[[1330, 263], [111, 296]]",14370
+NO_IQR_split20,Voting soft SMOTE_8000,0.808,0.5201,0.7322,0.6082,"[[1318, 275], [109, 298]]",14370
+NO_IQR_split20,Voting hard SMOTE_balance,0.8295,0.5676,0.6806,0.619,"[[1382, 211], [130, 277]]",12740
+NO_IQR_split20,Voting soft SMOTE_balance,0.8275,0.5615,0.6953,0.6213,"[[1372, 221], [124, 283]]",12740
+NO_IQR_split30,Voting hard SMOTE_default,0.8383,0.5875,0.6923,0.6356,"[[2092, 297], [188, 423]]",11148
+NO_IQR_split30,Voting soft SMOTE_default,0.829,0.5652,0.6956,0.6236,"[[2062, 327], [186, 425]]",11148
+NO_IQR_split30,Voting hard SMOTE_8000,0.8057,0.5157,0.7529,0.6121,"[[1957, 432], [151, 460]]",13574
+NO_IQR_split30,Voting soft SMOTE_8000,0.797,0.5011,0.7398,0.5975,"[[1939, 450], [159, 452]]",13574
+NO_IQR_split30,Voting hard SMOTE_balance,0.8383,0.5875,0.6923,0.6356,"[[2092, 297], [188, 423]]",11148
+NO_IQR_split30,Voting soft SMOTE_balance,0.829,0.5652,0.6956,0.6236,"[[2062, 327], [186, 425]]",11148
+IQR3_split20,Voting hard SMOTE_default,0.8288,0.5659,0.6855,0.62,"[[1377, 214], [128, 279]]",12722
+IQR3_split20,Voting soft SMOTE_default,0.8298,0.5674,0.6929,0.6239,"[[1376, 215], [125, 282]]",12722
+IQR3_split20,Voting hard SMOTE_8000,0.8158,0.5364,0.7052,0.6093,"[[1343, 248], [120, 287]]",14361
+IQR3_split20,Voting soft SMOTE_8000,0.8123,0.5294,0.7076,0.6057,"[[1335, 256], [119, 288]]",14361
+IQR3_split20,Voting hard SMOTE_balance,0.8288,0.5659,0.6855,0.62,"[[1377, 214], [128, 279]]",12722
+IQR3_split20,Voting soft SMOTE_balance,0.8298,0.5674,0.6929,0.6239,"[[1376, 215], [125, 282]]",12722
