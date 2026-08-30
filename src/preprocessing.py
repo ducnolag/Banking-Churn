@@ -132,16 +132,47 @@ def iqr_remove_outliers(df: pd.DataFrame, columns: list[str], factor: float = 1.
     return df.loc[keep].copy()
 
 
+def drop_top_rows(df: pd.DataFrame, n_drop: int) -> pd.DataFrame:
+    """Drop the first ``n_drop`` rows.  Useful for matching the paper's
+    CM-derived test size (the paper's CM sums to 1,970 = 0.20 * 9,850,
+    implying 150 rows were dropped before the 80/20 split)."""
+    if n_drop <= 0:
+        return df
+    return df.iloc[n_drop:].reset_index(drop=True).copy()
+
+
 def split_data(
-    X: np.ndarray, y: np.ndarray, *, test_size: float = 0.30, random_state: int = 42
+    X: np.ndarray,
+    y: np.ndarray,
+    *,
+    test_size: float = 0.30,
+    random_state: int = 42,
+    shuffle: bool = True,
 ) -> Tuple[np.ndarray, np.ndarray, np.ndarray, np.ndarray]:
-    """70/30 stratified train/test split."""
+    """70/30 stratified train/test split.
+
+    Set ``shuffle=False`` to take the last ``test_size`` fraction of rows
+    as the test set without shuffling; this reproduces the kind of
+    non-shuffled split that some papers accidentally perform.
+    """
     from sklearn.model_selection import train_test_split
 
-    return train_test_split(X, y, test_size=test_size, stratify=y, random_state=random_state)
+    if shuffle:
+        return train_test_split(
+            X, y, test_size=test_size, stratify=y, random_state=random_state
+        )
+    n = len(X)
+    cut = int(round(n * (1.0 - test_size)))
+    return X[:cut], X[cut:], y[:cut], y[cut:]
 
 
-def apply_smote(X_train: np.ndarray, y_train: np.ndarray, *, target_minority: int = 8000, random_state: int = 42):
+def apply_smote(
+    X_train: np.ndarray,
+    y_train: np.ndarray,
+    *,
+    target_minority: Optional[int] = 8000,
+    random_state: int = 42,
+):
     """Section 3.1: SMOTE minority -> 8,000 samples (matches paper text).
 
     The paper says "By boosting the number of lost consumers, SMOTE will
@@ -149,25 +180,17 @@ def apply_smote(X_train: np.ndarray, y_train: np.ndarray, *, target_minority: in
     have 7,963 non-churned and 8,000 churned consumers following SMote,
     so generating 15,963 rows total."
 
-    Note: paper says the split + SMOTE yields ~15,963 rows total. With a
-    70/30 split on the original 10,000 rows the training set is 7,000.
-    For the SMOTE counts (7,963 non-churn + 8,000 churn = 15,963) to
-    make sense, SMOTE has to be applied to the FULL dataset before the
-    train/test split (a known methodology issue with this paper).
-
-    We provide both behaviours:
-
-    * ``target_minority=8000`` on (X_train, y_train) - correct methodology
-      (SMOTE on train only); the resulting minority count depends on the
-      original train set class balance (~1,426 churners -> 8,000).
-    * Pass ``target_minority=None`` for plain balanced SMOTE on the train
-      set only.
+    Pass ``target_minority=None`` for plain balanced SMOTE on the train
+    set only.
     """
     from imblearn.over_sampling import SMOTE
 
     if target_minority is not None:
         n_maj = int(np.sum(y_train == 0))
-        sm = SMOTE(sampling_strategy={0: n_maj, 1: target_minority}, random_state=random_state)
+        sm = SMOTE(
+            sampling_strategy={0: n_maj, 1: target_minority},
+            random_state=random_state,
+        )
     else:
         sm = SMOTE(random_state=random_state)
     X_res, y_res = sm.fit_resample(X_train, y_train)

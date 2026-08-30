@@ -1,40 +1,40 @@
 {
-  "no_smote": [
+  "no_smote_70": [
     {
       "name": "Decision Tree",
-      "accuracy": 0.7948450017415535,
-      "precision": 0.48035714285714287,
-      "recall": 0.47442680776014107,
-      "f1": 0.47737355811889975,
+      "accuracy": 0.8463949843260188,
+      "precision": 0.6536585365853659,
+      "recall": 0.47266313932980597,
+      "f1": 0.548618219037871,
       "confusion_matrix": [
         [
-          2013,
-          291
+          2162,
+          142
         ],
         [
-          298,
-          269
+          299,
+          268
         ]
       ],
-      "classification_report": "              precision    recall  f1-score   support\n\n  Stayed (0)       0.87      0.87      0.87      2304\n Churned (1)       0.48      0.47      0.48       567\n\n    accuracy                           0.79      2871\n   macro avg       0.68      0.67      0.67      2871\nweighted avg       0.79      0.79      0.79      2871\n"
+      "classification_report": "              precision    recall  f1-score   support\n\n  Stayed (0)       0.88      0.94      0.91      2304\n Churned (1)       0.65      0.47      0.55       567\n\n    accuracy                           0.85      2871\n   macro avg       0.77      0.71      0.73      2871\nweighted avg       0.83      0.85      0.84      2871\n"
     },
     {
       "name": "Random Forest",
-      "accuracy": 0.8568443051201672,
-      "precision": 0.756578947368421,
-      "recall": 0.4056437389770723,
-      "f1": 0.5281285878300803,
+      "accuracy": 0.8582375478927203,
+      "precision": 0.7758620689655172,
+      "recall": 0.3968253968253968,
+      "f1": 0.5250875145857643,
       "confusion_matrix": [
         [
-          2230,
-          74
+          2239,
+          65
         ],
         [
-          337,
-          230
+          342,
+          225
         ]
       ],
-      "classification_report": "              precision    recall  f1-score   support\n\n  Stayed (0)       0.87      0.97      0.92      2304\n Churned (1)       0.76      0.41      0.53       567\n\n    accuracy                           0.86      2871\n   macro avg       0.81      0.69      0.72      2871\nweighted avg       0.85      0.86      0.84      2871\n"
+      "classification_report": "              precision    recall  f1-score   support\n\n  Stayed (0)       0.87      0.97      0.92      2304\n Churned (1)       0.78      0.40      0.53       567\n\n    accuracy                           0.86      2871\n   macro avg       0.82      0.68      0.72      2871\nweighted avg       0.85      0.86      0.84      2871\n"
     },
     {
       "name": "Support Vector Classifier",
@@ -56,95 +56,95 @@
     },
     {
       "name": "K-Nearest Neighbors",
-      "accuracy": 0.8258446534308603,
-      "precision": 0.615916955017301,
-      "recall": 0.31393298059964725,
-      "f1": 0.4158878504672897,
+      "accuracy": 0.8265412748171369,
+      "precision": 0.6219081272084805,
+      "recall": 0.31040564373897706,
+      "f1": 0.41411764705882353,
       "confusion_matrix": [
         [
-          2193,
-          111
+          2197,
+          107
         ],
         [
-          389,
-          178
+          391,
+          176
         ]
       ],
-      "classification_report": "              precision    recall  f1-score   support\n\n  Stayed (0)       0.85      0.95      0.90      2304\n Churned (1)       0.62      0.31      0.42       567\n\n    accuracy                           0.83      2871\n   macro avg       0.73      0.63      0.66      2871\nweighted avg       0.80      0.83      0.80      2871\n"
+      "classification_report": "              precision    recall  f1-score   support\n\n  Stayed (0)       0.85      0.95      0.90      2304\n Churned (1)       0.62      0.31      0.41       567\n\n    accuracy                           0.83      2871\n   macro avg       0.74      0.63      0.66      2871\nweighted avg       0.80      0.83      0.80      2871\n"
     },
     {
       "name": "XGBoost",
-      "accuracy": 0.8596307906652734,
-      "precision": 0.7530864197530864,
-      "recall": 0.43033509700176364,
-      "f1": 0.547699214365881,
+      "accuracy": 0.8582375478927203,
+      "precision": 0.7395209580838323,
+      "recall": 0.43562610229276894,
+      "f1": 0.5482796892341842,
       "confusion_matrix": [
         [
-          2224,
-          80
+          2217,
+          87
         ],
         [
-          323,
-          244
+          320,
+          247
         ]
       ],
-      "classification_report": "              precision    recall  f1-score   support\n\n  Stayed (0)       0.87      0.97      0.92      2304\n Churned (1)       0.75      0.43      0.55       567\n\n    accuracy                           0.86      2871\n   macro avg       0.81      0.70      0.73      2871\nweighted avg       0.85      0.86      0.84      2871\n"
+      "classification_report": "              precision    recall  f1-score   support\n\n  Stayed (0)       0.87      0.96      0.92      2304\n Churned (1)       0.74      0.44      0.55       567\n\n    accuracy                           0.86      2871\n   macro avg       0.81      0.70      0.73      2871\nweighted avg       0.85      0.86      0.84      2871\n"
     },
     {
       "name": "Voting Classifier (no SMOTE)",
-      "accuracy": 0.8557993730407524,
-      "precision": 0.7684210526315789,
-      "recall": 0.3862433862433862,
-      "f1": 0.5140845070422535,
+      "accuracy": 0.857889237199582,
+      "precision": 0.7731958762886598,
+      "recall": 0.3968253968253968,
+      "f1": 0.5244755244755245,
       "confusion_matrix": [
         [
           2238,
           66
         ],
         [
-          348,
-          219
+          342,
+          225
         ]
       ],
-      "classification_report": "              precision    recall  f1-score   support\n\n  Stayed (0)       0.87      0.97      0.92      2304\n Churned (1)       0.77      0.39      0.51       567\n\n    accuracy                           0.86      2871\n   macro avg       0.82      0.68      0.71      2871\nweighted avg       0.85      0.86      0.84      2871\n"
+      "classification_report": "              precision    recall  f1-score   support\n\n  Stayed (0)       0.87      0.97      0.92      2304\n Churned (1)       0.77      0.40      0.52       567\n\n    accuracy                           0.86      2871\n   macro avg       0.82      0.68      0.72      2871\nweighted avg       0.85      0.86      0.84      2871\n"
     }
   ],
-  "smote_train": [
+  "smote_train_70": [
     {
       "name": "Decision Tree",
-      "accuracy": 0.7638453500522466,
-      "precision": 0.42302357836338417,
-      "recall": 0.5379188712522046,
-      "f1": 0.47360248447204967,
+      "accuracy": 0.7328456983629398,
+      "precision": 0.39919354838709675,
+      "recall": 0.6984126984126984,
+      "f1": 0.5080179602309173,
       "confusion_matrix": [
         [
-          1888,
-          416
+          1708,
+          596
         ],
         [
-          262,
-          305
+          171,
+          396
         ]
       ],
-      "classification_report": "              precision    recall  f1-score   support\n\n  Stayed (0)       0.88      0.82      0.85      2304\n Churned (1)       0.42      0.54      0.47       567\n\n    accuracy                           0.76      2871\n   macro avg       0.65      0.68      0.66      2871\nweighted avg       0.79      0.76      0.77      2871\n"
+      "classification_report": "              precision    recall  f1-score   support\n\n  Stayed (0)       0.91      0.74      0.82      2304\n Churned (1)       0.40      0.70      0.51       567\n\n    accuracy                           0.73      2871\n   macro avg       0.65      0.72      0.66      2871\nweighted avg       0.81      0.73      0.76      2871\n"
     },
     {
       "name": "Random Forest",
-      "accuracy": 0.8286311389759665,
-      "precision": 0.5649913344887348,
-      "recall": 0.5749559082892416,
-      "f1": 0.5699300699300699,
+      "accuracy": 0.8059909439219785,
+      "precision": 0.5067024128686327,
+      "recall": 0.6666666666666666,
+      "f1": 0.5757806549885758,
       "confusion_matrix": [
         [
-          2053,
-          251
+          1936,
+          368
         ],
         [
-          241,
-          326
+          189,
+          378
         ]
       ],
-      "classification_report": "              precision    recall  f1-score   support\n\n  Stayed (0)       0.89      0.89      0.89      2304\n Churned (1)       0.56      0.57      0.57       567\n\n    accuracy                           0.83      2871\n   macro avg       0.73      0.73      0.73      2871\nweighted avg       0.83      0.83      0.83      2871\n"
+      "classification_report": "              precision    recall  f1-score   support\n\n  Stayed (0)       0.91      0.84      0.87      2304\n Churned (1)       0.51      0.67      0.58       567\n\n    accuracy                           0.81      2871\n   macro avg       0.71      0.75      0.73      2871\nweighted avg       0.83      0.81      0.82      2871\n"
     },
     {
       "name": "Support Vector Classifier",
@@ -166,167 +166,497 @@
     },
     {
       "name": "K-Nearest Neighbors",
-      "accuracy": 0.7216997561825148,
-      "precision": 0.38329979879275655,
-      "recall": 0.671957671957672,
-      "f1": 0.48814862267777065,
+      "accuracy": 0.7192615813305469,
+      "precision": 0.38272816486751715,
+      "recall": 0.6878306878306878,
+      "f1": 0.4918032786885246,
       "confusion_matrix": [
         [
-          1691,
-          613
+          1675,
+          629
         ],
         [
-          186,
-          381
+          177,
+          390
         ]
       ],
-      "classification_report": "              precision    recall  f1-score   support\n\n  Stayed (0)       0.90      0.73      0.81      2304\n Churned (1)       0.38      0.67      0.49       567\n\n    accuracy                           0.72      2871\n   macro avg       0.64      0.70      0.65      2871\nweighted avg       0.80      0.72      0.75      2871\n"
+      "classification_report": "              precision    recall  f1-score   support\n\n  Stayed (0)       0.90      0.73      0.81      2304\n Churned (1)       0.38      0.69      0.49       567\n\n    accuracy                           0.72      2871\n   macro avg       0.64      0.71      0.65      2871\nweighted avg       0.80      0.72      0.74      2871\n"
     },
     {
       "name": "XGBoost",
-      "accuracy": 0.8537095088819227,
-      "precision": 0.6384180790960452,
-      "recall": 0.5978835978835979,
-      "f1": 0.6174863387978142,
+      "accuracy": 0.8498780912574017,
+      "precision": 0.639344262295082,
+      "recall": 0.5502645502645502,
+      "f1": 0.5914691943127962,
       "confusion_matrix": [
         [
-          2112,
-          192
+          2128,
+          176
         ],
         [
-          228,
-          339
+          255,
+          312
         ]
       ],
-      "classification_report": "              precision    recall  f1-score   support\n\n  Stayed (0)       0.90      0.92      0.91      2304\n Churned (1)       0.64      0.60      0.62       567\n\n    accuracy                           0.85      2871\n   macro avg       0.77      0.76      0.76      2871\nweighted avg       0.85      0.85      0.85      2871\n"
+      "classification_report": "              precision    recall  f1-score   support\n\n  Stayed (0)       0.89      0.92      0.91      2304\n Churned (1)       0.64      0.55      0.59       567\n\n    accuracy                           0.85      2871\n   macro avg       0.77      0.74      0.75      2871\nweighted avg       0.84      0.85      0.85      2871\n"
     },
     {
       "name": "Voting Classifier (SMOTE on train)",
-      "accuracy": 0.8206199930337862,
-      "precision": 0.539039039039039,
-      "recall": 0.6331569664902998,
-      "f1": 0.5823195458231955,
+      "accuracy": 0.7934517589690003,
+      "precision": 0.48383084577114427,
+      "recall": 0.6860670194003528,
+      "f1": 0.5674690007293947,
       "confusion_matrix": [
         [
-          1997,
-          307
+          1889,
+          415
         ],
         [
-          208,
-          359
+          178,
+          389
         ]
       ],
-      "classification_report": "              precision    recall  f1-score   support\n\n  Stayed (0)       0.91      0.87      0.89      2304\n Churned (1)       0.54      0.63      0.58       567\n\n    accuracy                           0.82      2871\n   macro avg       0.72      0.75      0.73      2871\nweighted avg       0.83      0.82      0.83      2871\n"
+      "classification_report": "              precision    recall  f1-score   support\n\n  Stayed (0)       0.91      0.82      0.86      2304\n Churned (1)       0.48      0.69      0.57       567\n\n    accuracy                           0.79      2871\n   macro avg       0.70      0.75      0.72      2871\nweighted avg       0.83      0.79      0.81      2871\n"
     }
   ],
-  "smote_full": [
+  "smote_full_70": [
     {
       "name": "Decision Tree",
-      "accuracy": 0.8709608843537415,
-      "precision": 0.8752616157388029,
-      "recall": 0.87125,
-      "f1": 0.873251200668198,
+      "accuracy": 0.8841411564625851,
+      "precision": 0.9364705882352942,
+      "recall": 0.8291666666666667,
+      "f1": 0.8795580110497238,
       "confusion_matrix": [
         [
-          2006,
-          298
+          2169,
+          135
         ],
         [
-          309,
-          2091
+          410,
+          1990
         ]
       ],
-      "classification_report": "              precision    recall  f1-score   support\n\n  Stayed (0)       0.87      0.87      0.87      2304\n Churned (1)       0.88      0.87      0.87      2400\n\n    accuracy                           0.87      4704\n   macro avg       0.87      0.87      0.87      4704\nweighted avg       0.87      0.87      0.87      4704\n"
+      "classification_report": "              precision    recall  f1-score   support\n\n  Stayed (0)       0.84      0.94      0.89      2304\n Churned (1)       0.94      0.83      0.88      2400\n\n    accuracy                           0.88      4704\n   macro avg       0.89      0.89      0.88      4704\nweighted avg       0.89      0.88      0.88      4704\n"
     },
     {
       "name": "Random Forest",
-      "accuracy": 0.9162414965986394,
-      "precision": 0.9457777777777778,
-      "recall": 0.8866666666666667,
-      "f1": 0.9152688172043011,
+      "accuracy": 0.9075255102040817,
+      "precision": 0.9411764705882353,
+      "recall": 0.8733333333333333,
+      "f1": 0.905986600389021,
       "confusion_matrix": [
         [
-          2182,
-          122
+          2173,
+          131
         ],
         [
-          272,
-          2128
+          304,
+          2096
         ]
       ],
-      "classification_report": "              precision    recall  f1-score   support\n\n  Stayed (0)       0.89      0.95      0.92      2304\n Churned (1)       0.95      0.89      0.92      2400\n\n    accuracy                           0.92      4704\n   macro avg       0.92      0.92      0.92      4704\nweighted avg       0.92      0.92      0.92      4704\n"
+      "classification_report": "              precision    recall  f1-score   support\n\n  Stayed (0)       0.88      0.94      0.91      2304\n Churned (1)       0.94      0.87      0.91      2400\n\n    accuracy                           0.91      4704\n   macro avg       0.91      0.91      0.91      4704\nweighted avg       0.91      0.91      0.91      4704\n"
     },
     {
       "name": "Support Vector Classifier",
-      "accuracy": 0.8754251700680272,
-      "precision": 0.90892696122633,
-      "recall": 0.84,
-      "f1": 0.8731052403637939,
+      "accuracy": 0.8692602040816326,
+      "precision": 0.912621359223301,
+      "recall": 0.8225,
+      "f1": 0.8652202498356345,
       "confusion_matrix": [
         [
-          2102,
-          202
+          2115,
+          189
         ],
         [
-          384,
-          2016
+          426,
+          1974
         ]
       ],
-      "classification_report": "              precision    recall  f1-score   support\n\n  Stayed (0)       0.85      0.91      0.88      2304\n Churned (1)       0.91      0.84      0.87      2400\n\n    accuracy                           0.88      4704\n   macro avg       0.88      0.88      0.88      4704\nweighted avg       0.88      0.88      0.88      4704\n"
+      "classification_report": "              precision    recall  f1-score   support\n\n  Stayed (0)       0.83      0.92      0.87      2304\n Churned (1)       0.91      0.82      0.87      2400\n\n    accuracy                           0.87      4704\n   macro avg       0.87      0.87      0.87      4704\nweighted avg       0.87      0.87      0.87      4704\n"
     },
     {
       "name": "K-Nearest Neighbors",
-      "accuracy": 0.8460884353741497,
-      "precision": 0.8445723684210527,
-      "recall": 0.8558333333333333,
-      "f1": 0.8501655629139073,
+      "accuracy": 0.8679846938775511,
+      "precision": 0.8542413381123058,
+      "recall": 0.89375,
+      "f1": 0.8735491753207086,
       "confusion_matrix": [
         [
-          1926,
-          378
+          1938,
+          366
         ],
         [
-          346,
-          2054
+          255,
+          2145
         ]
       ],
-      "classification_report": "              precision    recall  f1-score   support\n\n  Stayed (0)       0.85      0.84      0.84      2304\n Churned (1)       0.84      0.86      0.85      2400\n\n    accuracy                           0.85      4704\n   macro avg       0.85      0.85      0.85      4704\nweighted avg       0.85      0.85      0.85      4704\n"
+      "classification_report": "              precision    recall  f1-score   support\n\n  Stayed (0)       0.88      0.84      0.86      2304\n Churned (1)       0.85      0.89      0.87      2400\n\n    accuracy                           0.87      4704\n   macro avg       0.87      0.87      0.87      4704\nweighted avg       0.87      0.87      0.87      4704\n"
     },
     {
       "name": "XGBoost",
-      "accuracy": 0.9128401360544217,
-      "precision": 0.9410460992907801,
-      "recall": 0.8845833333333334,
-      "f1": 0.9119415807560137,
+      "accuracy": 0.9102891156462585,
+      "precision": 0.9479166666666666,
+      "recall": 0.8720833333333333,
+      "f1": 0.9084201388888888,
       "confusion_matrix": [
         [
-          2171,
-          133
+          2189,
+          115
         ],
         [
-          277,
-          2123
+          307,
+          2093
         ]
       ],
-      "classification_report": "              precision    recall  f1-score   support\n\n  Stayed (0)       0.89      0.94      0.91      2304\n Churned (1)       0.94      0.88      0.91      2400\n\n    accuracy                           0.91      4704\n   macro avg       0.91      0.91      0.91      4704\nweighted avg       0.91      0.91      0.91      4704\n"
+      "classification_report": "              precision    recall  f1-score   support\n\n  Stayed (0)       0.88      0.95      0.91      2304\n Churned (1)       0.95      0.87      0.91      2400\n\n    accuracy                           0.91      4704\n   macro avg       0.91      0.91      0.91      4704\nweighted avg       0.91      0.91      0.91      4704\n"
     },
     {
       "name": "Voting Classifier (SMOTE on full data)",
-      "accuracy": 0.9100765306122449,
-      "precision": 0.9326039387308533,
-      "recall": 0.8879166666666667,
-      "f1": 0.9097118463180363,
+      "accuracy": 0.9085884353741497,
+      "precision": 0.9373889875666075,
+      "recall": 0.8795833333333334,
+      "f1": 0.907566638005159,
       "confusion_matrix": [
         [
-          2150,
-          154
+          2163,
+          141
         ],
         [
-          269,
-          2131
+          289,
+          2111
         ]
       ],
-      "classification_report": "              precision    recall  f1-score   support\n\n  Stayed (0)       0.89      0.93      0.91      2304\n Churned (1)       0.93      0.89      0.91      2400\n\n    accuracy                           0.91      4704\n   macro avg       0.91      0.91      0.91      4704\nweighted avg       0.91      0.91      0.91      4704\n"
+      "classification_report": "              precision    recall  f1-score   support\n\n  Stayed (0)       0.88      0.94      0.91      2304\n Churned (1)       0.94      0.88      0.91      2400\n\n    accuracy                           0.91      4704\n   macro avg       0.91      0.91      0.91      4704\nweighted avg       0.91      0.91      0.91      4704\n"
+    }
+  ],
+  "smote_full_80": [
+    {
+      "name": "Decision Tree",
+      "accuracy": 0.889030612244898,
+      "precision": 0.9396067415730337,
+      "recall": 0.83625,
+      "f1": 0.8849206349206349,
+      "confusion_matrix": [
+        [
+          1450,
+          86
+        ],
+        [
+          262,
+          1338
+        ]
+      ],
+      "classification_report": "              precision    recall  f1-score   support\n\n  Stayed (0)       0.85      0.94      0.89      1536\n Churned (1)       0.94      0.84      0.88      1600\n\n    accuracy                           0.89      3136\n   macro avg       0.89      0.89      0.89      3136\nweighted avg       0.89      0.89      0.89      3136\n"
+    },
+    {
+      "name": "Random Forest",
+      "accuracy": 0.9068877551020408,
+      "precision": 0.9467213114754098,
+      "recall": 0.86625,
+      "f1": 0.9046997389033943,
+      "confusion_matrix": [
+        [
+          1458,
+          78
+        ],
+        [
+          214,
+          1386
+        ]
+      ],
+      "classification_report": "              precision    recall  f1-score   support\n\n  Stayed (0)       0.87      0.95      0.91      1536\n Churned (1)       0.95      0.87      0.90      1600\n\n    accuracy                           0.91      3136\n   macro avg       0.91      0.91      0.91      3136\nweighted avg       0.91      0.91      0.91      3136\n"
+    },
+    {
+      "name": "Support Vector Classifier",
+      "accuracy": 0.8727678571428571,
+      "precision": 0.9178844815588031,
+      "recall": 0.824375,
+      "f1": 0.8686203490286467,
+      "confusion_matrix": [
+        [
+          1418,
+          118
+        ],
+        [
+          281,
+          1319
+        ]
+      ],
+      "classification_report": "              precision    recall  f1-score   support\n\n  Stayed (0)       0.83      0.92      0.88      1536\n Churned (1)       0.92      0.82      0.87      1600\n\n    accuracy                           0.87      3136\n   macro avg       0.88      0.87      0.87      3136\nweighted avg       0.88      0.87      0.87      3136\n"
+    },
+    {
+      "name": "K-Nearest Neighbors",
+      "accuracy": 0.8743622448979592,
+      "precision": 0.8572274881516587,
+      "recall": 0.904375,
+      "f1": 0.8801703163017032,
+      "confusion_matrix": [
+        [
+          1295,
+          241
+        ],
+        [
+          153,
+          1447
+        ]
+      ],
+      "classification_report": "              precision    recall  f1-score   support\n\n  Stayed (0)       0.89      0.84      0.87      1536\n Churned (1)       0.86      0.90      0.88      1600\n\n    accuracy                           0.87      3136\n   macro avg       0.88      0.87      0.87      3136\nweighted avg       0.88      0.87      0.87      3136\n"
+    },
+    {
+      "name": "XGBoost",
+      "accuracy": 0.9072066326530612,
+      "precision": 0.9461486025903204,
+      "recall": 0.8675,
+      "f1": 0.9051190088033909,
+      "confusion_matrix": [
+        [
+          1457,
+          79
+        ],
+        [
+          212,
+          1388
+        ]
+      ],
+      "classification_report": "              precision    recall  f1-score   support\n\n  Stayed (0)       0.87      0.95      0.91      1536\n Churned (1)       0.95      0.87      0.91      1600\n\n    accuracy                           0.91      3136\n   macro avg       0.91      0.91      0.91      3136\nweighted avg       0.91      0.91      0.91      3136\n"
+    },
+    {
+      "name": "Voting Classifier (SMOTE on full, 80/20)",
+      "accuracy": 0.9084821428571429,
+      "precision": 0.9397186872069658,
+      "recall": 0.876875,
+      "f1": 0.9072098286453282,
+      "confusion_matrix": [
+        [
+          1446,
+          90
+        ],
+        [
+          197,
+          1403
+        ]
+      ],
+      "classification_report": "              precision    recall  f1-score   support\n\n  Stayed (0)       0.88      0.94      0.91      1536\n Churned (1)       0.94      0.88      0.91      1600\n\n    accuracy                           0.91      3136\n   macro avg       0.91      0.91      0.91      3136\nweighted avg       0.91      0.91      0.91      3136\n"
+    }
+  ],
+  "no_smote_80": [
+    {
+      "name": "Decision Tree",
+      "accuracy": 0.8568443051201672,
+      "precision": 0.7524271844660194,
+      "recall": 0.41005291005291006,
+      "f1": 0.5308219178082192,
+      "confusion_matrix": [
+        [
+          1485,
+          51
+        ],
+        [
+          223,
+          155
+        ]
+      ],
+      "classification_report": "              precision    recall  f1-score   support\n\n  Stayed (0)       0.87      0.97      0.92      1536\n Churned (1)       0.75      0.41      0.53       378\n\n    accuracy                           0.86      1914\n   macro avg       0.81      0.69      0.72      1914\nweighted avg       0.85      0.86      0.84      1914\n"
+    },
+    {
+      "name": "Random Forest",
+      "accuracy": 0.8610240334378265,
+      "precision": 0.7978723404255319,
+      "recall": 0.3968253968253968,
+      "f1": 0.5300353356890459,
+      "confusion_matrix": [
+        [
+          1498,
+          38
+        ],
+        [
+          228,
+          150
+        ]
+      ],
+      "classification_report": "              precision    recall  f1-score   support\n\n  Stayed (0)       0.87      0.98      0.92      1536\n Churned (1)       0.80      0.40      0.53       378\n\n    accuracy                           0.86      1914\n   macro avg       0.83      0.69      0.72      1914\nweighted avg       0.85      0.86      0.84      1914\n"
+    },
+    {
+      "name": "Support Vector Classifier",
+      "accuracy": 0.8537095088819227,
+      "precision": 0.788235294117647,
+      "recall": 0.3544973544973545,
+      "f1": 0.48905109489051096,
+      "confusion_matrix": [
+        [
+          1500,
+          36
+        ],
+        [
+          244,
+          134
+        ]
+      ],
+      "classification_report": "              precision    recall  f1-score   support\n\n  Stayed (0)       0.86      0.98      0.91      1536\n Churned (1)       0.79      0.35      0.49       378\n\n    accuracy                           0.85      1914\n   macro avg       0.82      0.67      0.70      1914\nweighted avg       0.85      0.85      0.83      1914\n"
+    },
+    {
+      "name": "K-Nearest Neighbors",
+      "accuracy": 0.8338557993730408,
+      "precision": 0.65625,
+      "recall": 0.3333333333333333,
+      "f1": 0.4421052631578947,
+      "confusion_matrix": [
+        [
+          1470,
+          66
+        ],
+        [
+          252,
+          126
+        ]
+      ],
+      "classification_report": "              precision    recall  f1-score   support\n\n  Stayed (0)       0.85      0.96      0.90      1536\n Churned (1)       0.66      0.33      0.44       378\n\n    accuracy                           0.83      1914\n   macro avg       0.75      0.65      0.67      1914\nweighted avg       0.81      0.83      0.81      1914\n"
+    },
+    {
+      "name": "XGBoost",
+      "accuracy": 0.8636363636363636,
+      "precision": 0.7577092511013216,
+      "recall": 0.455026455026455,
+      "f1": 0.5685950413223141,
+      "confusion_matrix": [
+        [
+          1481,
+          55
+        ],
+        [
+          206,
+          172
+        ]
+      ],
+      "classification_report": "              precision    recall  f1-score   support\n\n  Stayed (0)       0.88      0.96      0.92      1536\n Churned (1)       0.76      0.46      0.57       378\n\n    accuracy                           0.86      1914\n   macro avg       0.82      0.71      0.74      1914\nweighted avg       0.85      0.86      0.85      1914\n"
+    },
+    {
+      "name": "Voting Classifier (no SMOTE, 80/20)",
+      "accuracy": 0.8615464994775339,
+      "precision": 0.8021390374331551,
+      "recall": 0.3968253968253968,
+      "f1": 0.5309734513274337,
+      "confusion_matrix": [
+        [
+          1499,
+          37
+        ],
+        [
+          228,
+          150
+        ]
+      ],
+      "classification_report": "              precision    recall  f1-score   support\n\n  Stayed (0)       0.87      0.98      0.92      1536\n Churned (1)       0.80      0.40      0.53       378\n\n    accuracy                           0.86      1914\n   macro avg       0.84      0.69      0.72      1914\nweighted avg       0.85      0.86      0.84      1914\n"
+    }
+  ],
+  "smote_full_9850_80": [
+    {
+      "name": "Decision Tree",
+      "accuracy": 0.889030612244898,
+      "precision": 0.9396067415730337,
+      "recall": 0.83625,
+      "f1": 0.8849206349206349,
+      "confusion_matrix": [
+        [
+          1450,
+          86
+        ],
+        [
+          262,
+          1338
+        ]
+      ],
+      "classification_report": "              precision    recall  f1-score   support\n\n  Stayed (0)       0.85      0.94      0.89      1536\n Churned (1)       0.94      0.84      0.88      1600\n\n    accuracy                           0.89      3136\n   macro avg       0.89      0.89      0.89      3136\nweighted avg       0.89      0.89      0.89      3136\n"
+    },
+    {
+      "name": "Random Forest",
+      "accuracy": 0.9068877551020408,
+      "precision": 0.9467213114754098,
+      "recall": 0.86625,
+      "f1": 0.9046997389033943,
+      "confusion_matrix": [
+        [
+          1458,
+          78
+        ],
+        [
+          214,
+          1386
+        ]
+      ],
+      "classification_report": "              precision    recall  f1-score   support\n\n  Stayed (0)       0.87      0.95      0.91      1536\n Churned (1)       0.95      0.87      0.90      1600\n\n    accuracy                           0.91      3136\n   macro avg       0.91      0.91      0.91      3136\nweighted avg       0.91      0.91      0.91      3136\n"
+    },
+    {
+      "name": "Support Vector Classifier",
+      "accuracy": 0.8727678571428571,
+      "precision": 0.9178844815588031,
+      "recall": 0.824375,
+      "f1": 0.8686203490286467,
+      "confusion_matrix": [
+        [
+          1418,
+          118
+        ],
+        [
+          281,
+          1319
+        ]
+      ],
+      "classification_report": "              precision    recall  f1-score   support\n\n  Stayed (0)       0.83      0.92      0.88      1536\n Churned (1)       0.92      0.82      0.87      1600\n\n    accuracy                           0.87      3136\n   macro avg       0.88      0.87      0.87      3136\nweighted avg       0.88      0.87      0.87      3136\n"
+    },
+    {
+      "name": "K-Nearest Neighbors",
+      "accuracy": 0.8743622448979592,
+      "precision": 0.8572274881516587,
+      "recall": 0.904375,
+      "f1": 0.8801703163017032,
+      "confusion_matrix": [
+        [
+          1295,
+          241
+        ],
+        [
+          153,
+          1447
+        ]
+      ],
+      "classification_report": "              precision    recall  f1-score   support\n\n  Stayed (0)       0.89      0.84      0.87      1536\n Churned (1)       0.86      0.90      0.88      1600\n\n    accuracy                           0.87      3136\n   macro avg       0.88      0.87      0.87      3136\nweighted avg       0.88      0.87      0.87      3136\n"
+    },
+    {
+      "name": "XGBoost",
+      "accuracy": 0.9072066326530612,
+      "precision": 0.9461486025903204,
+      "recall": 0.8675,
+      "f1": 0.9051190088033909,
+      "confusion_matrix": [
+        [
+          1457,
+          79
+        ],
+        [
+          212,
+          1388
+        ]
+      ],
+      "classification_report": "              precision    recall  f1-score   support\n\n  Stayed (0)       0.87      0.95      0.91      1536\n Churned (1)       0.95      0.87      0.91      1600\n\n    accuracy                           0.91      3136\n   macro avg       0.91      0.91      0.91      3136\nweighted avg       0.91      0.91      0.91      3136\n"
+    },
+    {
+      "name": "Voting Classifier (SMOTE full on 9850, 80/20)",
+      "accuracy": 0.9084821428571429,
+      "precision": 0.9397186872069658,
+      "recall": 0.876875,
+      "f1": 0.9072098286453282,
+      "confusion_matrix": [
+        [
+          1446,
+          90
+        ],
+        [
+          197,
+          1403
+        ]
+      ],
+      "classification_report": "              precision    recall  f1-score   support\n\n  Stayed (0)       0.88      0.94      0.91      1536\n Churned (1)       0.94      0.88      0.91      1600\n\n    accuracy                           0.91      3136\n   macro avg       0.91      0.91      0.91      3136\nweighted avg       0.91      0.91      0.91      3136\n"
     }
   ]
 }
